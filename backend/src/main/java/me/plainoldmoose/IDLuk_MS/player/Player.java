@@ -17,15 +17,18 @@ public class Player {
     )
     private long ID;
     private String name;
-    private int elo;
+    private Integer elo;
 
-    public Player(long ID, String name, int elo) {
+    public Player() {
+    }
+
+    public Player(long ID, String name, Integer elo) {
         this.ID = ID;
         this.elo = elo;
         this.name = name;
     }
 
-    public Player(String name, int elo) {
+    public Player(String name, Integer elo) {
         this.elo = elo;
         this.name = name;
     }
@@ -38,11 +41,11 @@ public class Player {
         this.ID = ID;
     }
 
-    public int getElo() {
+    public Integer getElo() {
         return elo;
     }
 
-    public void setElo(int elo) {
+    public void setElo(Integer elo) {
         this.elo = elo;
     }
 
